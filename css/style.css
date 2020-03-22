@@ -17,10 +17,12 @@
   --mainColor: #1780a9;
   --with: #fff;
   --gray: #7d7d7d;
+  --shadow: #e4dfdf;
+  --bg-body: #f1f1f1;
 }
 body {
   position: relative;
-  background-color: #f1f1f1;
+  background-color: var(--bg-body);
   text-transform: capitalize;
 }
 .bg-img {
@@ -37,6 +39,7 @@ body {
   letter-spacing: 2px;
   font-family: "Playball", cursive;
   font-size: 1.8em;
+  color: var(--black);
 }
 .heading-section::after,
 .heading-section::before {
@@ -111,8 +114,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("../images/load/load.gif") no-repeat center center;
-  color: #000;
+  background: var(--with) url("../images/load/load.gif") no-repeat center center;
 }
 @media (max-width: 992px) {
   .heading-section {
@@ -138,7 +140,6 @@ body {
 .close {
   display: block;
   width: 100%;
-  background-color: var(--with);
   height: 2px;
   margin: 5px 0;
   background-color: var(--mainColor);
@@ -182,9 +183,6 @@ nav {
   color: var(--with);
   opacity: 0.8;
 }
-.content-nav {
-  display: flex;
-}
 .content-nav .logo-imge {
   width: 100%;
   margin: 15px 0;
@@ -212,7 +210,7 @@ nav {
   width: 30%;
 }
 .show-list {
-  box-shadow: 0px 1px 5px 2px #ab9292;
+  box-shadow: 0px 1px 5px 2px var(--shadow);
 }
 .navbar .nav-list {
   margin: 20px 0;
@@ -287,8 +285,34 @@ nav {
   width: 100%;
   transform: translateX(0);
 }
+.box-dark {
+  position: relative;
+  height: 30px;
+  width: 70px;
+  cursor: pointer;
+  border: 1px solid var(--mainColor);
+  background-color: var(--bg-body);
+  border-radius: 35px;
+  margin: 0 auto !important;
+}
+.box-dark .dark {
+  position: absolute;
+  display: block;
+  left: 2px;
+  right: auto;
+  top: 2px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--mainColor);
+  transition: right 0.4s;
+}
+.box-dark .dark-toggle {
+  left: auto;
+  right: 2px;
+}
 @media (max-width: 992px) {
-  nav{
+  nav {
     padding: 30px;
   }
   .navbar {
@@ -397,6 +421,7 @@ header .header-content {
   font-size: 2em;
   margin-bottom: 15px;
   position: relative;
+  top: 0;
   transition: top 0.4s;
 }
 .abuot .abuot-skiils .box-skiil:hover > i {
@@ -436,6 +461,9 @@ header .header-content {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/background/skills.jpg");
   color: var(--with);
+}
+.skiils .heading-section {
+  color: var(--with) !important;
 }
 .skiils .heading-section::after,
 .skiils .heading-section::before {
@@ -598,12 +626,18 @@ header .header-content {
   .skiils .content-skiils {
     grid-template-columns: repeat(1, 1fr);
   }
+  .skiils .content-skiils .skill-box-bar .skill-name {
+    left: 0;
+  }
 }
 /* --------------------------
 6- Start My Works*/
 .work .content-work {
-  box-shadow: 1px 1px 10px 2px #e4dfdf;
+  box-shadow: 1px 1px 10px 2px var(--shadow);
   margin-bottom: 20px;
+}
+.work .content-work h4 {
+  color: var(--black);
 }
 .work .content-work img {
   width: 100%;
@@ -637,7 +671,7 @@ header .header-content {
   transform: translate(-50%, -50%);
   background-color: var(--with);
   width: 60%;
-  height: 300px;
+  height: auto;
   padding: 30px 15px;
 }
 .work .popup-work .content-popup-work .icon {
@@ -648,7 +682,7 @@ header .header-content {
 }
 .work .popup-work .img .img-popup {
   width: 100%;
-  height: 240px
+  height: 240px;
 }
 .desc-pop,
 .desc-pop > p {
@@ -663,16 +697,15 @@ header .header-content {
 .link-popup:hover {
   color: var(--with);
 }
-@media(max-width: 992px){
+@media (max-width: 992px) {
   .work .popup-work .content-popup-work {
-    width: 75%;
-    height: auto;
+    width: 80%;
     padding: 0px 0px 10px;
   }
-  .desc{
+  .desc {
     padding: 10px 15px;
   }
-  .work .popup-work .content-popup-work .icon{
+  .work .popup-work .content-popup-work .icon {
     background-color: var(--with);
     height: 32px;
     border-radius: 5px;
@@ -683,6 +716,9 @@ header .header-content {
 .contact {
   background-image: url("../images/background/contact.jpg");
   color: var(--with);
+}
+.contact .heading-section {
+  color: var(--with) !important;
 }
 .contact .heading-section::after,
 .contact .heading-section::before {
