@@ -665,7 +665,7 @@ header .header-content {
 }
 @media(max-width: 992px){
   .work .popup-work .content-popup-work {
-    width: 90%;
+    width: 75%;
     height: auto;
     padding: 0px 0px 10px;
   }
