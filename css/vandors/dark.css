@@ -1,65 +1,70 @@
 .dark-theem {
-  --black: #fff;
-  --mainColor: #000;
-  --with: #fff;
-  --gray: #7d7d7d;
-  --shadow: rgba(255, 255, 255, 0.5);
-  --bg-body: #000;
+    --black: #fff;
+    --mainColor: #000;
+    --with: #fff;
+    --gray: #7d7d7d;
+    --shadow: rgba(255, 255, 255, 0.5);
+    --bg-body: #000;
 }
-
+.dark-theem .work .heading-section::after,
+.dark-theem .work .heading-section::before,
+.dark-theem .abuot .heading-section::after,
+.dark-theem .abuot .heading-section::before {
+    background-color: var(--with);
+}
 .dark-theem .btn-effct::before {
-  background-color: var(--with);
+    background-color: var(--with);
 }
 .dark-theem .close {
-  background-color: var(--with);
+    background-color: var(--with);
 }
 .dark-theem .navbar {
-  background-color: var(--mainColor);
+    background-color: var(--mainColor);
 }
 .dark-theem .content-nav .logo-imge img {
-  border: 2px solid var(--with);
+    border: 2px solid var(--with);
 }
 .dark-theem .box-dark {
-  border: 1px solid var(--with);
-  background-color: var(--with);
+    border: 1px solid var(--with);
+    background-color: var(--with);
 }
 .dark-theem .box-dark .dark {
-  background-color: var(--mainColor);
+    background-color: var(--mainColor);
 }
 .dark-theem .navbar .nav-link {
-  color: var(--with);
+    color: var(--with);
 }
 .dark-theem .navbar .nav-link:hover {
-  color: var(--mainColor);
+    color: var(--mainColor);
 }
 .dark-theem .navbar .nav-link::before {
-  background-color: var(--with);
+    background-color: var(--with);
 }
 .dark-theem .nav-link.active {
-  background-color: var(--with);
-  color: var(--mainColor) !important;
+    background-color: var(--with);
+    color: var(--mainColor) !important;
 }
 .dark-theem .work .content-work .work-link {
-  color: var(--with);
+    color: var(--with);
 }
 .dark-theem .work .content-work .work-link:hover {
-  color: var(--mainColor);
+    color: var(--mainColor);
 }
 .dark-theem .content-popup-work .close {
-  background-color: var(--mainColor);
+    background-color: var(--mainColor);
 }
 .dark-theem .link-popup.btn-effct::before {
-  background-color: var(--mainColor);
+    background-color: var(--mainColor);
 }
 .dark-theem .btn-contact:hover {
-  color: var(--mainColor);
+    color: var(--mainColor);
 }
 .dark-theem .contact .box-content {
-  border: 1px solid var(--with);
+    border: 1px solid var(--with);
 }
 .dark-theem footer {
-  background-color: var(--mainColor);
+    background-color: var(--mainColor);
 }
 .dark-theem .copy {
-  border-top: 1px solid var(--with);
+    border-top: 1px solid var(--with);
 }
