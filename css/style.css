@@ -420,7 +420,7 @@ header .header-content {
   font-size: 2em;
   margin-bottom: 15px;
   position: relative;
-  top: 0;
+  top: 5px;
   transition: top 0.4s;
 }
 .abuot .abuot-skiils .box-skiil:hover > i {
