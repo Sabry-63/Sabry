@@ -52,6 +52,9 @@ $(function() {
     // Nav Toggle List
     $(".nav-bar").click(function() {
         $(".navbar").toggleClass("show-list");
+        $('.content-nav').animate({
+            width: 100 + "%"
+        },700)
         if ($(".navbar").hasClass("show-list")) {
             $(".navbar").animate(
                 {
@@ -68,7 +71,7 @@ $(function() {
             );
         }
     });
-    $(".content-nav .icon").click(function() {
+    $(".content-nav .icon, .nav-link ,.content-nav").click(function() {
         $(".navbar").removeClass("show-list");
         $(".navbar").animate(
             {
@@ -77,6 +80,11 @@ $(function() {
             700
         );
     });
+    $('.content-nav').click(function() {
+        $(this).animate({
+            width: 0
+        },700)
+    })
     // Add Class Active To Nav Linl
     $(".nav-link").click(function(e) {
         let navHieght = $("nav").innerHeight();
