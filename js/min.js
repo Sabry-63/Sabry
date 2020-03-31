@@ -1,4 +1,4 @@
- /*global $, console */
+/*global $, console */
 $(function() {
     "use strict";
     const widthNav = $(".navbar").innerWidth();
@@ -15,11 +15,11 @@ $(function() {
         $(".navbar").css("left", -widthNav);
     });
     // Dark Theem
-    $('.box-dark').click(function(e){
+    $(".box-dark").click(function(e) {
         e.preventDefault();
-        $('body').toggleClass('dark-theem');
-        $('.dark').toggleClass('dark-toggle');
-    })
+        $("body").toggleClass("dark-theem");
+        $(".dark").toggleClass("dark-toggle");
+    });
     // When Scroll body Sticky Nav bar
     $(window).scroll(function() {
         let scroll = $(this).scrollTop(),
@@ -52,9 +52,12 @@ $(function() {
     // Nav Toggle List
     $(".nav-bar").click(function() {
         $(".navbar").toggleClass("show-list");
-        $('.content-nav').animate({
-            width: 100 + "%"
-        },600)
+        $(".content-nav").animate(
+            {
+                width: 100 + "%"
+            },
+            600
+        );
         if ($(".navbar").hasClass("show-list")) {
             $(".navbar").animate(
                 {
@@ -71,7 +74,7 @@ $(function() {
             );
         }
     });
-    $(".content-nav .icon, .nav-link ,.content-nav").click(function() {
+    $(".icon, .nav-link ,.content-nav").click(function() {
         $(".navbar").removeClass("show-list");
         $(".navbar").animate(
             {
@@ -80,11 +83,14 @@ $(function() {
             600
         );
     });
-    $('.content-nav').click(function() {
-        $(this).animate({
-            width: 0
-        },600)
-    })
+    $(".content-nav, .icon ").click(function() {
+        $(".content-nav").animate(
+            {
+                width: 0
+            },
+            600
+        );
+    });
     // Add Class Active To Nav Linl
     $(".nav-link").click(function(e) {
         let navHieght = $("nav").innerHeight();
@@ -102,9 +108,12 @@ $(function() {
             },
             1500
         );
-        $('.content-nav').animate({
-            width: 0 + "%"
-        },600)
+        $(".content-nav").animate(
+            {
+                width: 0 + "%"
+            },
+            600
+        );
     });
 
     // Set Data To Popup
