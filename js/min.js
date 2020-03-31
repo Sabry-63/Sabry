@@ -54,20 +54,20 @@ $(function() {
         $(".navbar").toggleClass("show-list");
         $('.content-nav').animate({
             width: 100 + "%"
-        },700)
+        },600)
         if ($(".navbar").hasClass("show-list")) {
             $(".navbar").animate(
                 {
                     left: 0
                 },
-                700
+                600
             );
         } else {
             $(".navbar").animate(
                 {
                     left: -widthNav
                 },
-                700
+                600
             );
         }
     });
@@ -77,13 +77,13 @@ $(function() {
             {
                 left: -widthNav
             },
-            700
+            600
         );
     });
     $('.content-nav').click(function() {
         $(this).animate({
             width: 0
-        },700)
+        },600)
     })
     // Add Class Active To Nav Linl
     $(".nav-link").click(function(e) {
@@ -102,6 +102,9 @@ $(function() {
             },
             1500
         );
+        $('.content-nav').animate({
+            width: 0 + "%"
+        },600)
     });
 
     // Set Data To Popup
