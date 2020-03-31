@@ -201,8 +201,8 @@ nav {
   display: block;
 }
 .navbar .logo-imge img {
-  width: 200px;
-  height: 200px;
+  width: 60%;
+  height: 180px;
   border: 1px solid var(--mainColor);
   border-radius: 100%;
   padding: 10px;
@@ -340,9 +340,9 @@ nav {
     top: 0.3em;
     font-size: 1.6em;
   }
-  .logo-imge img {
-    width: 150px;
-    height: 150px;
+  .navbar .logo-imge img {
+    width: 80%;
+    height: 155px;
   }
 }
 /* --------------------------
