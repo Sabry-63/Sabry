@@ -27,8 +27,8 @@
 .dark-theem .content-popup-work .close {
     background-color: var(--mainColor);
 }
-.dark-theem .content-nav .logo-imge img {
-    border: 2px solid var(--with);
+.dark-theem .logo-imge img {
+    border: 1px solid var(--with);
 }
 .dark-theem .box-dark {
     border: 1px solid var(--with);
