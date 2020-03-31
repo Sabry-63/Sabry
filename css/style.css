@@ -136,6 +136,10 @@ body {
 .icon {
   padding: 10px;
   cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 8%;
 }
 .close {
   display: block;
@@ -204,7 +208,7 @@ nav {
   padding: 10px;
   transition: padding 0.4s;
 }
-.navbar :hover img {
+.navbar:hover img {
   padding: 0px;
 }
 .navbar {
@@ -336,7 +340,7 @@ nav {
     top: 0.3em;
     font-size: 1.6em;
   }
-  .content-nav .logo-imge img {
+  .logo-imge img {
     width: 150px;
     height: 150px;
   }
