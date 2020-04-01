@@ -14,6 +14,10 @@ $(function() {
         });
         $(".navbar").css("left", -widthNav);
     });
+    $(window).resize(function(){
+      let resizeW = $(".navbar").innerWidth();
+        $(".navbar").css("left", -resizeW);
+    });
     // Dark Theem
     $(".box-dark").click(function(e) {
         e.preventDefault();
@@ -28,6 +32,21 @@ $(function() {
         if (scroll > 1) {
             if ($("nav").hasClass() !== "top-nav") {
                 $("nav").addClass("top-nav animated fadeInDown");
+            }
+            if ($(".navbar").hasClass("show-list")) {
+                $(".navbar").removeClass("show-list");
+                $(".navbar").animate(
+                    {
+                        left: -widthNav
+                    },
+                    600
+                );
+                $(".content-nav").animate(
+                    {
+                        width: 0
+                    },
+                    600
+                );
             }
         } else {
             $("nav").removeClass("top-nav animated fadeInDown");
